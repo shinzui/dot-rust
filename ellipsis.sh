@@ -2,10 +2,12 @@
 #
 # shinzui/rust ellipsis package
 
-# The following hooks can be defined to customize behavior of your package:
-# pkg.install() {
-#     fs.link_files $PKG_PATH
-# }
+pkg.install() {
+  brew install rustup-init
+  rustup-init
+  rustup install nightly
+  rustup component add rustfmt-preview --toolchain=nightly
+}
 
 # pkg.push() {
 #     git.push
