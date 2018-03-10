@@ -13,9 +13,10 @@ pkg.install() {
 #     git.push
 # }
 
-# pkg.pull() {
-#     git.pull
-# }
+pkg.pull() {
+  rustup self update
+  rustup update
+}
 
 # pkg.installed() {
 #     git.status
