@@ -5,8 +5,11 @@
 pkg.install() {
   brew install rustup-init
   rustup-init
+  rustup component add rustfmt-preview --toolchain=stable
+  rustup component add rust-src
   rustup install nightly
   rustup component add rustfmt-preview --toolchain=nightly
+  cargo install racer
 }
 
 # pkg.push() {
