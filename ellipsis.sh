@@ -9,9 +9,11 @@ pkg.install() {
   rustup component add rust-src
   rustup install nightly
   rustup component add rustfmt-preview --toolchain=nightly
+  rustup component add rls-preview rust-analysis rust-src
   cargo install racer
   cargo install cargo-watch
   cargo install cargo-make
+  cargo install cargo-edit
 }
 
 # pkg.push() {
@@ -24,6 +26,7 @@ pkg.pull() {
   cargo install --force racer
   cargo install --force cargo-watch
   cargo install --force cargo-make
+  cargo install --force cargo-edit
 }
 
 # pkg.installed() {
