@@ -14,6 +14,7 @@ pkg.install() {
   cargo install cargo-watch
   cargo install cargo-make
   cargo install cargo-edit
+  cargo install cargo-show
 }
 
 # pkg.push() {
@@ -27,6 +28,7 @@ pkg.pull() {
   cargo install --force cargo-watch
   cargo install --force cargo-make
   cargo install --force cargo-edit
+  cargo install --force cargo-show
 }
 
 # pkg.installed() {
